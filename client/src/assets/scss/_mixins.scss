@@ -99,3 +99,9 @@
           }
      }
 }
+
+@mixin from($width) {
+     @media (min-width: $width) {
+          @content;
+     }
+}
