@@ -1,7 +1,7 @@
 <template>
      <section class="register">
           <div class="register__form">
-               <h3 class="register__title">Sign In</h3>
+               <h3 class="register__title">Sign up</h3>
                <register-form />
 
                <divider label="or" />
