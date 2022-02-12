@@ -1,5 +1,5 @@
 <template>
-     <form action="" class="form form--login">
+     <form action="" class="form form--register">
           <div class="form__box">
                <div class="form__input">
                     <input class="form__input-field" type="text" placeholder="Firstname" name="firstname" />

@@ -7,7 +7,7 @@
                <divider label="or" />
 
                <div class="login__options">
-                    <router-link to="/register" class="login__signup-link">Forgot Password?</router-link>
+                    <router-link to="/reset-password" class="login__signup-link">Forgot Password?</router-link>
                     <router-link to="/register" class="login__signup-link">Sign Up!</router-link>
                </div>
           </div>
