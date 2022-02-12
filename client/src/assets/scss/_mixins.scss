@@ -6,12 +6,9 @@
 
 @mixin authContainer {
      &__form {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
           max-width: 450px;
-          min-height: 100vh;
           margin: 0 auto;
+          margin-top: 80px;
           padding: 0 15px;
           text-align: center;
      }

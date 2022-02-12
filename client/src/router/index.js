@@ -27,6 +27,11 @@ const routes = [
           name: 'ResetPassword',
           component: () => import('../views/auth/ResetPassword.vue'),
      },
+     {
+          path: '/verify',
+          name: 'Verify',
+          component: () => import('../views/auth/Verify.vue'),
+     },
 ];
 
 const router = createRouter({
