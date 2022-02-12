@@ -19,15 +19,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .form {
      &__input {
           justify-content: space-evenly;
      }
 
      &__input-field {
-          width: 30px;
-          max-width: 30px !important;
+          max-width: 30px;
           text-align: center;
           font-size: 16px;
      }

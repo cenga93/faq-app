@@ -14,5 +14,3 @@ export default {
      name: 'ResetPasswordForm',
 };
 </script>
-
-<style scoped></style>
