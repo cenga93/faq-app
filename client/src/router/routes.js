@@ -1,10 +1,10 @@
-import Home from '@/views/Home';
+import Dashboard from '@/views/Dashboard';
 
 export const routes = [
      {
           path: '/',
           name: 'Home',
-          component: Home,
+          component: Dashboard,
      },
      {
           path: '/login',
