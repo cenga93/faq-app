@@ -1,7 +1,7 @@
 <template>
      <header class="header">
           <div class="header__contrainer">
-               <button class="header__toggler"></button>
+               <button class="header__toggler" @click="handleToggleClick"></button>
                <HeaderMenu />
           </div>
      </header>
@@ -9,10 +9,20 @@
 
 <script>
 import HeaderMenu from './HeaderMenu';
+import { useStore } from 'vuex';
 
 export default {
      name: 'Header',
      components: { HeaderMenu },
+     setup() {
+          const store = useStore();
+
+          const handleToggleClick = () => store.dispatch('openDrawer');
+
+          return {
+               handleToggleClick,
+          };
+     },
 };
 </script>
 
