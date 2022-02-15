@@ -1,7 +1,7 @@
 <template>
      <Header />
      <drawer />
-     <div class="overlay" :class="showLayout && 'overlay--show'" @click="handleNesto"></div>
+     <div class="overlay" :class="showLayout && 'overlay--show'" @click="hideOverlay"></div>
 
      <Content />
 </template>
@@ -18,10 +18,8 @@ export default {
      setup() {
           const store = useStore();
 
-          const handleNesto = () => store.dispatch('closeDrawer');
-
           return {
-               handleNesto,
+               hideOverlay: store.dispatch('closeDrawer'),
                showLayout: computed(() => store.state.activeLayout),
           };
      },
