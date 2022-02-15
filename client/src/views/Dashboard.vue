@@ -19,7 +19,7 @@ export default {
           const store = useStore();
 
           return {
-               hideOverlay: store.dispatch('closeDrawer'),
+               hideOverlay: () => store.dispatch('closeDrawer'),
                showLayout: computed(() => store.state.activeLayout),
           };
      },
