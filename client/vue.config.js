@@ -4,7 +4,6 @@ module.exports = {
                scss: {
                     additionalData: `
                          @import "~@/assets/scss/_mixins.scss";
-                         @import "~@/assets/scss/_vars.scss";
                     `,
                },
           },

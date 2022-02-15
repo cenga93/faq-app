@@ -14,9 +14,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content {
-     width: 100%;
-     height: 100%;
+     display: flex;
+     justify-content: center;
+     margin-top: 50px;
+
+     &__container {
+          @include paper($color-white);
+          box-shadow: 0 0 50px 0 rgb(82 63 105 / 5%);
+     }
 }
 </style>
