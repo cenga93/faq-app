@@ -1,19 +1,19 @@
 <template>
      <Header />
-
      <drawer />
-
      <div class="overlay" :class="showLayout && 'overlay--show'" @click="handleNesto"></div>
+
+     <Content />
 </template>
 
 <script>
-import { Header, Drawer } from '@/components';
+import { Header, Drawer, Content } from '@/components';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
 
 export default {
      name: 'Home',
-     components: { Header, Drawer },
+     components: { Header, Drawer, Content },
 
      setup() {
           const store = useStore();

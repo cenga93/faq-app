@@ -5,7 +5,15 @@ export const routes = [
           path: '/',
           name: 'Home',
           component: Dashboard,
+          children: [
+               {
+                    path: '/profile',
+                    name: 'Profile',
+                    component: () => import('../views/Profile.vue'),
+               },
+          ],
      },
+
      {
           path: '/login',
           name: 'Login',

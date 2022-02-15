@@ -30,7 +30,7 @@ export default {
 $toggle_svg: url('../../assets/svg/bars-staggered-solid.svg');
 
 .header {
-     border-bottom: 1px solid $color-brand-2;
+     background-color: $color-white;
 
      &__contrainer {
           @include flex(flex, space-between, center);

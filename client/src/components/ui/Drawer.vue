@@ -1,5 +1,5 @@
 <template>
-     <aside class="drawer drawer--active" :class="drawerIsActive && 'drawer--active'">
+     <aside class="drawer" :class="drawerIsActive && 'drawer--active'">
           <div class="drawer__head">
                <h2>Faq app</h2>
                <p>v1.0.0</p>
@@ -14,7 +14,7 @@
                </ul>
           </div>
           <div class="drawer__footer">
-               <button class="drawer__footer__button">Add category</button>
+               <button class="drawer__footer__button">Add new category</button>
           </div>
      </aside>
 </template>
