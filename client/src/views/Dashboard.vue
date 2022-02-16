@@ -2,7 +2,6 @@
      <Header />
      <drawer />
      <div class="overlay" :class="showLayout && 'overlay--show'" @click="hideOverlay"></div>
-
      <Content />
 </template>
 

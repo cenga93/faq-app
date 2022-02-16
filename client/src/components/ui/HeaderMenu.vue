@@ -70,6 +70,7 @@ export default {
           width: 257px;
           top: calc(100% + 8px);
           right: 0;
+          z-index: 1;
 
           &:not(&--active) {
                display: none;

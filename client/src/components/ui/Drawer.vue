@@ -5,6 +5,12 @@
                <p>v1.0.0</p>
           </div>
           <div class="drawer__body">
+               <p class="drawer__body__title">Pages</p>
+               <ul class="drawer__body__list">
+                    <li class="drawer__body__item">Home</li>
+                    <li class="drawer__body__item">Profile</li>
+               </ul>
+
                <p class="drawer__body__title">Categories</p>
                <ul class="drawer__body__list">
                     <li class="drawer__body__item">Frontend</li>
@@ -80,8 +86,8 @@ export default {
           }
 
           &__item {
-               position: relative;
                color: $color-brand-14;
+               position: relative;
                padding: 5px 30px 10px;
                cursor: pointer;
 
@@ -115,20 +121,20 @@ export default {
           padding: 15px;
 
           &__button {
-               border-radius: 5px;
+               background-color: $color-brand-15;
                color: $color-brand-14;
-               font-weight: 500;
-               text-transform: uppercase;
-               border: none;
+               display: block;
                width: 100%;
                padding: 10px 15px;
-               display: block;
-               background: $color-brand-15;
+               font-weight: 500;
                transition: all 0.3s;
+               border-radius: 5px;
+               text-transform: uppercase;
+               border: none;
                cursor: pointer;
 
                &:hover {
-                    color: #fff;
+                    color: $color-white;
                }
           }
      }
