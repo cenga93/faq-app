@@ -39,15 +39,11 @@ export default {
           const showMenu = ref(false);
           const target = ref(null);
 
-          const openMenu = () => {
-               showMenu.value = !showMenu.value;
-          };
-
           onClickOutside(target, () => (showMenu.value = false));
 
           return {
                target,
-               openMenu,
+               openMenu: () => (showMenu.value = !showMenu.value),
                showMenu,
           };
      },

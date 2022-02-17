@@ -1,6 +1,6 @@
 @import './vars';
 
-@mixin flex($display, $justify, $align: $justify) {
+@mixin flex($display, $justify: center, $align: $justify) {
      display: $display;
      justify-content: $justify;
      align-items: $align;
@@ -76,7 +76,7 @@
 
 @mixin divider {
      .divider {
-          @include flex(flex, center);
+          @include flex(flex);
           margin: 30px 0;
 
           span {

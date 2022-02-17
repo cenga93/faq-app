@@ -92,12 +92,11 @@ export default {
                cursor: pointer;
 
                &:after {
+                    @include size(5px);
                     content: '';
                     position: absolute;
                     top: 15px;
                     left: 11px;
-                    width: 5px;
-                    height: 5px;
                     background: $color-brand-14;
                     border-radius: 10px;
                }

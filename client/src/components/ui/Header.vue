@@ -1,15 +1,15 @@
 <template>
      <header class="header">
           <div class="header__contrainer">
-               <button class="header__toggler" @click="handleToggleClick"></button>
+               <button class="header__toggle" @click="handleToggleClick"></button>
                <HeaderMenu />
           </div>
      </header>
 </template>
 
 <script>
-import HeaderMenu from './HeaderMenu';
 import { useStore } from 'vuex';
+import HeaderMenu from './HeaderMenu';
 
 export default {
      name: 'Header',
@@ -17,10 +17,8 @@ export default {
      setup() {
           const store = useStore();
 
-          const handleToggleClick = () => store.dispatch('openDrawer');
-
           return {
-               handleToggleClick,
+               handleToggleClick: () => store.dispatch('openDrawer'),
           };
      },
 };
@@ -37,7 +35,7 @@ $toggle_svg: url('../../assets/svg/bars-staggered-solid.svg');
           padding: 8px 32px;
      }
 
-     &__toggler {
+     &__toggle {
           @include size(20px);
           background-color: $color-brand-6;
           -webkit-mask-image: $toggle_svg;
