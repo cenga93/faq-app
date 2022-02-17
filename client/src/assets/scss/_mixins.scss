@@ -7,7 +7,7 @@
 }
 
 @mixin authContainer {
-     &__form {
+     &__container {
           max-width: 450px;
           margin: 0 auto;
           margin-top: 80px;
@@ -116,5 +116,5 @@
      padding: 20px;
      background-color: $bgColor;
      border-radius: 7px;
-     margin: 0 30px;
+     margin: 0 30px 30px;
 }

@@ -1,6 +1,6 @@
 <template>
      <section class="verify">
-          <div class="verify__form">
+          <div class="verify__container">
                <h3 class="verify__title">Chech your email</h3>
 
                <verify-form />

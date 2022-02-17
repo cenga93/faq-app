@@ -1,28 +1,25 @@
 <template>
-     <section class="register">
-          <div class="register__form">
-               <h3 class="register__title">Sign up</h3>
+     <AuthContainer className="register">
+          <template #form-slot>
                <register-form />
+          </template>
 
-               <divider label="or" />
-
-               <div class="register__options">
-                    <router-link to="/login" class="register__signup-link">Back to login</router-link>
-               </div>
-          </div>
-     </section>
+          <template #options-slot>
+               <router-link to="/login" class="register__signup-link">Back to login</router-link>
+          </template>
+     </AuthContainer>
 </template>
 
 <script>
-import { Divider, RegisterForm } from '@/components';
+import { RegisterForm, AuthContainer } from '@/components';
 
 export default {
      name: 'Register',
-     components: { Divider, RegisterForm },
+     components: { RegisterForm, AuthContainer },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .register {
      @include authContainer;
 }

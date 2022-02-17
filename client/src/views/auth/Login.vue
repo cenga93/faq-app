@@ -1,29 +1,26 @@
 <template>
-     <section class="login">
-          <div class="login__form">
-               <h3 class="login__title">Sign In</h3>
+     <AuthContainer className="login">
+          <template #form-slot>
                <login-form />
+          </template>
 
-               <divider label="or" />
-
-               <div class="login__options">
-                    <router-link to="/reset-password" class="login__signup-link">Forgot Password?</router-link>
-                    <router-link to="/register" class="login__signup-link">Sign Up!</router-link>
-               </div>
-          </div>
-     </section>
+          <template #options-slot>
+               <router-link to="/reset-password" class="login__signup-link">Forgot Password?</router-link>
+               <router-link to="/register" class="login__signup-link">Sign Up!</router-link>
+          </template>
+     </AuthContainer>
 </template>
 
 <script>
-import { Divider, LoginForm } from '@/components';
+import { LoginForm, AuthContainer } from '@/components';
 
 export default {
      name: 'Login',
-     components: { Divider, LoginForm },
+     components: { LoginForm, AuthContainer },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .login {
      @include authContainer;
 }

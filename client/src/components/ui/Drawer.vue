@@ -8,7 +8,7 @@
                <p class="drawer__body__title">Pages</p>
                <ul class="drawer__body__list">
                     <li class="drawer__body__item">Home</li>
-                    <li class="drawer__body__item">Profile</li>
+                    <li class="drawer__body__item">My posts</li>
                </ul>
 
                <p class="drawer__body__title">Categories</p>
