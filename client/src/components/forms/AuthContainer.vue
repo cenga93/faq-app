@@ -1,7 +1,7 @@
 <template>
      <section :class="className">
           <div :class="className + '__container'">
-               <h3 :class="className + '__title'">Sign In</h3>
+               <h3 :class="className + '__title'">{{ title }}</h3>
                <slot name="form-slot"></slot>
 
                <divider :label="dividerLabel ? dividerLabel : 'or'" />
@@ -22,6 +22,10 @@ export default {
           className: {
                type: String,
                required: true,
+          },
+          title: {
+               type: String,
+               require: true,
           },
           dividerLabel: {
                type: String,

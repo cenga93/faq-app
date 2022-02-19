@@ -1,5 +1,5 @@
 <template>
-     <AuthContainer className="login">
+     <AuthContainer className="login" title="Sign In">
           <template #form-slot>
                <login-form />
           </template>

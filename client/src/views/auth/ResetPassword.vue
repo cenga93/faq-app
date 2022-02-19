@@ -1,5 +1,5 @@
 <template>
-     <AuthContainer className="reset-password">
+     <AuthContainer className="reset-password" title="Reset Password">
           <template #form-slot>
                <reset-password-form />
           </template>
