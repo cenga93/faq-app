@@ -3,7 +3,7 @@
           <div class="content__container">
                <div class="content__container-inner">
                     <div class="content__row">
-                         <card v-for="item in arr" :key="item" />
+                         <PostCard v-for="item in arr" :key="item" />
                     </div>
                </div>
           </div>
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import Card from '../Card/Card';
+import PostCard from '../Post/PostCard';
 
 export default {
      name: 'Content',
-     components: { Card },
+     components: { PostCard },
      setup() {
           const arr = [1, 2, 3, 4, 5, 6];
 
