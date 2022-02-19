@@ -7,5 +7,6 @@ import Header from './ui/Header';
 import Drawer from './ui/Drawer';
 import Content from './ui/Content';
 import AuthContainer from './forms/AuthContainer';
+import Spinner from './ui/Spinner';
 
-export { Divider, LoginForm, RegisterForm, ResetPasswordForm, VerifyForm, Header, Drawer, Content, AuthContainer };
+export { Divider, LoginForm, RegisterForm, ResetPasswordForm, VerifyForm, Header, Drawer, Content, AuthContainer, Spinner };

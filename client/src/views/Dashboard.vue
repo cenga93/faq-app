@@ -11,7 +11,7 @@ import { useStore } from 'vuex';
 import { computed } from 'vue';
 
 export default {
-     name: 'Home',
+     name: 'Dashboard',
      components: { Header, Drawer, Content },
 
      setup() {

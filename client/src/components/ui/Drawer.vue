@@ -10,7 +10,6 @@
                     <li class="drawer__body__item">Home</li>
                     <li class="drawer__body__item">My posts</li>
                </ul>
-
                <p class="drawer__body__title">Categories</p>
                <ul class="drawer__body__list">
                     <li class="drawer__body__item">Frontend</li>
@@ -73,6 +72,9 @@ export default {
      }
 
      &__body {
+          width: 100%;
+          height: calc(100% - 140px);
+          overflow: auto;
           &__title {
                color: $color-brand-13;
                padding: 30px 10px 10px;

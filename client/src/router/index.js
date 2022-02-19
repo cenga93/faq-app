@@ -6,4 +6,9 @@ const router = createRouter({
      routes,
 });
 
+router.beforeEach((to, _, next) => {
+     document.title = `${process.env.VUE_APP_TITLE} | ${to.name}`;
+     next();
+});
+
 export default router;

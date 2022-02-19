@@ -3,7 +3,7 @@ import Dashboard from '@/views/Dashboard';
 export const routes = [
      {
           path: '/',
-          name: 'Home',
+          name: 'Dashboard',
           component: Dashboard,
           children: [
                {
