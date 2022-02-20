@@ -2,17 +2,17 @@
      <Header />
      <drawer />
      <div class="overlay" :class="showLayout && 'overlay--show'" @click="hideOverlay"></div>
-     <Content />
+     <router-view />
 </template>
 
 <script>
-import { Header, Drawer, Content } from '@/components';
+import { Header, Drawer } from '@/components';
 import { useStore } from 'vuex';
 import { computed } from 'vue';
 
 export default {
      name: 'Dashboard',
-     components: { Header, Drawer, Content },
+     components: { Header, Drawer },
 
      setup() {
           const store = useStore();

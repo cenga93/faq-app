@@ -7,9 +7,19 @@ export const routes = [
           component: Dashboard,
           children: [
                {
+                    path: '/',
+                    name: 'Posts',
+                    component: () => import('../views/Post/Posts'),
+               },
+               {
                     path: '/profile',
                     name: 'Profile',
-                    component: () => import('../views/Profile.vue'),
+                    component: () => import('../views/Profile'),
+               },
+               {
+                    path: '/post/:id',
+                    name: 'Post',
+                    component: () => import('../views/Post/SinglePost'),
                },
           ],
      },

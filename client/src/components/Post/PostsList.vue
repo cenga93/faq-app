@@ -1,31 +1,29 @@
 <template>
-     <section class="content">
-          <div class="content__container">
-               <div class="content__container-inner">
-                    <div class="content__row">
-                         <PostCard v-for="item in arr" :key="item" />
-                    </div>
+     <section class="postsList">
+          <div class="postsList__container">
+               <div class="postsList__row">
+                    <PostCard v-for="item in arr" :key="item" />
                </div>
           </div>
      </section>
 </template>
 
 <script>
-import PostCard from '../Post/PostCard';
+import PostCard from './PostCard';
 
 export default {
-     name: 'Content',
+     name: 'PostsList',
      components: { PostCard },
      setup() {
-          const arr = [1, 2, 3, 4, 5, 6];
-
-          return { arr };
+          return {
+               arr: [1, 2, 3, 4, 5, 6],
+          };
      },
 };
 </script>
 
 <style scoped lang="scss">
-.content {
+.postsList {
      display: flex;
      justify-content: center;
      margin-top: 50px;
