@@ -9,17 +9,22 @@ export const routes = [
                {
                     path: '/',
                     name: 'Posts',
-                    component: () => import('../views/Post/Posts'),
+                    component: () => import('../views/Post/Posts.vue'),
                },
                {
                     path: '/profile',
                     name: 'Profile',
-                    component: () => import('../views/Profile'),
+                    component: () => import('../views/Profile.vue'),
+               },
+               {
+                    path: '/profile/:id',
+                    name: 'ProfileInfo',
+                    component: () => import('../views/ProfileInfo.vue'),
                },
                {
                     path: '/post/:id',
                     name: 'Post',
-                    component: () => import('../views/Post/SinglePost'),
+                    component: () => import('../views/Post/SinglePost.vue'),
                },
           ],
      },

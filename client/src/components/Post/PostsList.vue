@@ -2,7 +2,7 @@
      <section class="postsList">
           <div class="postsList__container">
                <div class="postsList__row">
-                    <PostCard v-for="item in arr" :key="item" />
+                    <PostCard v-for="item in arr" :key="item" :item="item" />
                </div>
           </div>
      </section>
@@ -22,7 +22,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .postsList {
      display: flex;
      justify-content: center;
